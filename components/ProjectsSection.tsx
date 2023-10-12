@@ -57,8 +57,8 @@ const ProjectsSection = () => {
                         <Image
                           src={project.icon}
                           alt=""
-                          width={30}
-                          height={30}
+                          width={32}
+                          height={32}
                           className="shadow-xl"
                         />
                       </div>
