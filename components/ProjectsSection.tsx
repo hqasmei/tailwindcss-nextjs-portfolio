@@ -10,7 +10,7 @@ const projects = [
     description:
       "MuseAI is a versatile Software as a Service (SaaS) application that brings together a curated set of powerful AI tools to unleash your creativity. Whether you're a developer, designer, or artist, MuseAI provides cutting-edge capabilities to generate code, images, 3-second short videos, and music clips. Say goodbye to creative blocks and welcome a new era of inspiration with MuseAI.",
     image: "/images/MuseAI.png",
-    icon: "/icons/museAi.ico",
+    icon: "/icons/museAI.ico",
     github: "https://github.com/JamShou/MuseAI",
     link: "https://muse-ai.vercel.app/",
   },
