@@ -1,8 +1,8 @@
-"use client" // this is a client component
-import React from "react"
-import Image from "next/image"
-import { Link } from "react-scroll/modules"
-import { HiArrowDown } from "react-icons/hi"
+"use client"; // this is a client component
+import React from "react";
+import Image from "next/image";
+import { Link } from "react-scroll/modules";
+import { HiArrowDown } from "react-icons/hi";
 
 const HeroSection = () => {
   return (
@@ -18,25 +18,27 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m Hosna!</h1>
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">
+            Hi, I&#39;m Alec!
+          </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
-            <span className="font-semibold text-teal-600">
-              Software Engineer{" "}
+            <span className="font-semibold text-purple-600">
+              senior computer science student{" "}
             </span>
-            based in Los Angeles, CA. Working towards creating software that
-            makes life easier and more meaningful.
+            at Purdue University Northwest in Hammond, Indiana. Pushing myself
+            to learn and grow every day!
           </p>
           <Link
-            to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+            to="about"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-purple-600 rounded shadow hover:bg-purple-700"
             activeClass="active"
             spy={true}
             smooth={true}
             offset={-100}
             duration={500}
           >
-            Projects
+            About Me
           </Link>
         </div>
       </div>
@@ -53,7 +55,7 @@ const HeroSection = () => {
         </Link>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
