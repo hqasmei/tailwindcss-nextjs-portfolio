@@ -12,9 +12,6 @@
 /.next/
 /out/
 
-# production
-/build
-
 # misc
 .DS_Store
 *.pem
@@ -36,7 +33,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-package-lock.json
+
 
 # amplify
 .amplify
