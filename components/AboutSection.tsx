@@ -36,7 +36,7 @@ const AboutSection = () => {
             <p>
               Hello! My name is Alec and I am a{" "}
               <span className="font-bold">{"enthusiastic"}</span>,
-              <span className="font-bold">{"ambitious"} </span>, and
+              <span className="font-bold">{" ambitious"} </span>, and
               <span className="font-bold">{" driven"}</span> computer science
               student in northwest Indiana located near Chicago.
             </p>

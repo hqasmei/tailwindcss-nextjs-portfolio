@@ -78,7 +78,7 @@ export default function Navbar() {
               })}
 
               <Link
-                href="PiVPN_WireGuard"
+                href="/PiVPN_WireGuard"
                 id="PiVPN_WireGuard"
                 className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
                 onClick={() => setNavbar(!navbar)}
