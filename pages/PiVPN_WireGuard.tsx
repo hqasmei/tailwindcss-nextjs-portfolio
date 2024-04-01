@@ -16,6 +16,9 @@ export default function PiVPN_WireGuardPage() {
           <ExternalNavbar />
           <div className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
             <br />
+            <br />
+            <br />
+            <br />
             {/* Container for blog content */}
             <PiVPN />
           </div>
