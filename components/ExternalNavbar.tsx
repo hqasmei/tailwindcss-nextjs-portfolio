@@ -52,7 +52,7 @@ export default function ExternalNavbar() {
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <Link
                 href="/"
-                id="PiVPN_WireGuard"
+                id="Home"
                 className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
                 onClick={() => setNavbar(!navbar)}
               >
@@ -62,7 +62,7 @@ export default function ExternalNavbar() {
 
               <Link
                 href="/#about"
-                id="PiVPN_WireGuard"
+                id="about"
                 className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
                 onClick={() => setNavbar(!navbar)}
               >
@@ -76,7 +76,7 @@ export default function ExternalNavbar() {
                 className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
                 onClick={() => setNavbar(!navbar)}
               >
-                PiVPN WireGuard
+                WireGuard
               </Link>
               {currentTheme === "dark" ? (
                 <button

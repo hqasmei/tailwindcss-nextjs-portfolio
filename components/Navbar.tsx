@@ -83,7 +83,7 @@ export default function Navbar() {
                 className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
                 onClick={() => setNavbar(!navbar)}
               >
-                PiVPN WireGuard
+                WireGuard
               </Link>
               {currentTheme === "dark" ? (
                 <button
