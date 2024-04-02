@@ -1,5 +1,7 @@
 import React from "react";
 
+{
+  /*}
 export default function CodeBlock({
   text,
   lang,
@@ -32,4 +34,6 @@ export default function CodeBlock({
       <script>new ClipboardJS('.code');</script>
     </>
   );
+}
+*/
 }
