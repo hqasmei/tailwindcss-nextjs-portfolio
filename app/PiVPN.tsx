@@ -1,12 +1,16 @@
 "use client";
 import Link from "next/link";
 import "../styles/globals.css";
+import CodeBlock from "@/components/CodeBlock";
 
 export default function PiPVN() {
   return (
     <>
       <main className="mt-50">
-        <h1 id="overview">Overview</h1>
+        <h1 className="blog-title">Creating a Wireguard VPN using PiVPN</h1>
+        <h1 id="overview" className="blog-h1">
+          Overview
+        </h1>
         <p>
           This summer, I will be watching the Indy500 from Lili's Aunt &amp;
           Uncles house near Indianapolis. The problem is, their house is too
@@ -19,99 +23,103 @@ export default function PiPVN() {
           tunnel the traffic to and from my home network and my mobile devices.
         </p>
         <br />
-        <h2 id="quicklinks">QuickLinks</h2>
+        <h2 id="quicklinks" className="blog-h2">
+          QuickLinks
+        </h2>
         <ul>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#overview">Overview</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#quicklinks">QuickLinks</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#related">Related</Link>
           </li>
 
-          <li>
+          <li className="blog-quicklink">
             <Link href="#tutorial-im-following">Tutorial I'm Following</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#materials-and-software">Materials and Software</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#step-by-step">Step by step</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#installing-and-updating-raspberry-pi-os">
               Installing and updating Raspberry Pi OS
             </Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#installing-pivpn-and-wireguard">
               Installing PiVPN and Wireguard
             </Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#pivpn">PiVPN</Link>
           </li>
 
-          <li>
+          <li className="blog-quicklink">
             <Link href="#network-port-forwarding">Network Port Forwarding</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#network-change">Network Change</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#setting-static-ip-address">
               Setting static ip address
             </Link>{" "}
             -{" "}
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#-before-setting-static-ip-address-">
               ~~ Before setting static ip address ~~
             </Link>{" "}
             -{" "}
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#-after-setting-static-ip-address-">
               ~~ After setting static ip address ~~
             </Link>{" "}
             -{" "}
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#-what-the-eero-app-looks-like-">
               ~~ What the eero app looks like ~~
             </Link>
           </li>
 
-          <li>
+          <li className="blog-quicklink">
             <Link href="#port-forwarding">Port Forwarding</Link> -{" "}
             <Link href="#-what-the-eero-app-looks-like--1">
               ~~ What the eero app looks like ~~
             </Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#adding-client--profile-to-vpn-server">
               Adding client / Profile to VPN server
             </Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#setting-up-client">Setting Up Client</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#phone--tablet">Phone / Tablet</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#laptop--desktop">Laptop / Desktop</Link>
           </li>
-          <li>
+          <li className="blog-quicklink">
             <Link href="#performance-and-conclusion">
               Performance and Conclusion
             </Link>
           </li>
         </ul>
         <br />
-        <h4 id="related">Related</h4>
+        <h4 className="blog-h4" id="related">
+          Related
+        </h4>
         <p>[[Remote Desktop Indy500]]</p>
         <br />
         <h1 id="tutorial-im-following">Tutorial I'm Following</h1>
@@ -228,7 +236,9 @@ export default function PiPVN() {
         <p>![[Pasted image 20240313182859.png]]</p>
         <p>Then I reboot the system : ![[Pasted image 20240313183149.png]]</p>
         <br />
-        <h2 id="network-port-forwarding">Network Port Forwarding</h2>
+        <h2 className="blog-h2" id="network-port-forwarding">
+          Network Port Forwarding
+        </h2>
         <p>
           Because we use TP-Link's Deco mesh network system at home, I have to
           configure everything inside of their app.
@@ -243,7 +253,9 @@ export default function PiPVN() {
           That didn't work
         </p>
         <br />
-        <h2 id="network-change">Network Change</h2>
+        <h2 className="blog-h2" id="network-change">
+          Network Change
+        </h2>
         <p>
           We have two networks at my house, and I just changed all of my devices
           over to that one. Before I was on a mesh wifi system that was piggy
@@ -252,39 +264,45 @@ export default function PiPVN() {
           in hope that this one works better
         </p>
         <br />
-        <h2 id="setting-static-ip-address">Setting static ip address</h2>
-        <h5 id="-before-setting-static-ip-address-">
+        <h2 className="blog-h2" id="setting-static-ip-address">
+          Setting static ip address
+        </h2>
+        <h5 className="blog-h5" id="-before-setting-static-ip-address-">
           ~~ Before setting static ip address ~~
         </h5>
         <p>![[Pasted image 20240313234057.png]]</p>
-        <h5 id="-after-setting-static-ip-address-">
+        <h5 className="blog-h5" id="-after-setting-static-ip-address-">
           ~~ After setting static ip address ~~
         </h5>
         <p>![[Pasted image 20240314002005.png]]</p>
-        <h5 id="-what-the-eero-app-looks-like-">
+        <h5 className="blog-h5" id="-what-the-eero-app-looks-like-">
           ~~ What the eero app looks like ~~
         </h5>
         <br />
-        <h2 id="port-forwarding">Port Forwarding</h2>
+        <h2 className="blog-h2" id="port-forwarding">
+          Port Forwarding
+        </h2>
         <p>Open the port 51820 for wireguard to connect to :</p>
-        <h5 id="-what-the-eero-app-looks-like--1">
+        <h5 className="blog-h5" id="-what-the-eero-app-looks-like--1">
           ~~ What the eero app looks like ~~
         </h5>
         <br />
-        <h2 id="adding-client--profile-to-vpn-server">
+        <h2 className="blog-h2" id="adding-client--profile-to-vpn-server">
           Adding client / Profile to VPN server
         </h2>
         <p>To add a client to the server use the command :</p>
-        <pre>
-          <code className="language-Bash">pivpn add</code>
-        </pre>
+        <CodeBlock text="pivpn add" lang="Bash" />
         <p>
           and then give a name to the client. This creates a client that
           wireguard assigns to a device.
         </p>
         <br />
-        <h2 id="setting-up-client">Setting Up Client</h2>
-        <h3 id="phone--tablet">Phone / Tablet</h3>
+        <h2 className="blog-h2" id="setting-up-client">
+          Setting Up Client
+        </h2>
+        <h3 className="blog-h3" id="phone--tablet">
+          Phone / Tablet
+        </h3>
         <p>To add a mobile device, you can create a QR code using :</p>
         <pre>
           <code className="language-Bash">pivpn -qr</code>
@@ -295,7 +313,9 @@ export default function PiPVN() {
           code:
         </p>
         <br />
-        <h3 id="laptop--desktop">Laptop / Desktop</h3>
+        <h3 className="blog-h3" id="laptop--desktop">
+          Laptop / Desktop
+        </h3>
         <p>
           For my laptop I first added a client / profile (see above) named
           alec-laptop. I then copied the config file to a usb thumb drive
@@ -309,7 +329,9 @@ export default function PiPVN() {
         </p>
         <p>![[Pasted image 20240314005943.png]]</p>
         <br />
-        <h1 id="performance-and-conclusion">Performance and Conclusion</h1>
+        <h1 className="blog-h1" id="performance-and-conclusion">
+          Performance and Conclusion
+        </h1>
         <p>
           Overall, I thought this project was super fun. I learned a lot about
           static IP addresses and port forwarding, because this was my first

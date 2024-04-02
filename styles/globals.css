@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blog-title {
+  @apply text-6xl font-bold text-center text-yellow-500;
+}
+
+.blog-h1 {
+  @apply text-5xl font-bold text-red-500;
+}
+
+.blog-h2 {
+  @apply text-4xl font-bold text-blue-500;
+}
+
+.blog-h3 {
+  @apply text-3xl font-bold text-green-500;
+}
+
+.blog-h4 {
+  @apply text-2xl font-bold text-purple-500;
+}
+
+.blog-h5 {
+  @apply text-xl font-bold text-teal-500;
+}
+
+.blog-quicklink {
+  @apply text-orange-700
+  hover:text-purple-700;
+}
