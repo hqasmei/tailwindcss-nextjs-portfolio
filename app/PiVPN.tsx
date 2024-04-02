@@ -291,7 +291,10 @@ export default function PiPVN() {
           Adding client / Profile to VPN server
         </h2>
         <p>To add a client to the server use the command :</p>
-        <CodeBlock text="pivpn add" lang="Bash" />
+        <pre>
+          <code className="language-Bash">pivpn add</code>
+        </pre>
+
         <p>
           and then give a name to the client. This creates a client that
           wireguard assigns to a device.
