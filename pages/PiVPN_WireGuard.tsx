@@ -21,6 +21,7 @@ export default function PiVPN_WireGuardPage() {
             <br />
             {/* Container for blog content */}
             <PiVPN />
+            <Footer />
           </div>
         </ThemeProvider>
       </div>
