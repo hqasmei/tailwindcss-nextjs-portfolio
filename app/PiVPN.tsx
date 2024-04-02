@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import "../styles/globals.css";
-import CodeBlock from "@/components/CodeBlock";
 
 export default function PiPVN() {
   return (
