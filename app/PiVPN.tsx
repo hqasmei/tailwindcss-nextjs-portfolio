@@ -422,7 +422,7 @@ export default function PiPVN() {
           to have an enjoyable experience live streaming the Indy 500 from
           halfway across the state. I have two main suspects right now.
         </p>
-        <ol>
+        <ol className="blog-ol">
           <li>
             Network performance caused by using a wireless connection to the
             network or
