@@ -25,7 +25,7 @@ export default function PiPVN() {
         <h2 id="quicklinks" className="blog-h2">
           QuickLinks
         </h2>
-        <ul>
+        <ul className="blog-ul">
           <li className="blog-quicklink">
             <Link href="#overview">Overview</Link>
           </li>
@@ -133,7 +133,7 @@ export default function PiPVN() {
         ></iframe>
         <br />
         <h1 id="materials-and-software">Materials and Software</h1>
-        <ul>
+        <ul className="blog-ul">
           <li>Raspberry Pi</li>
           <li>Updated Pi OS</li>
           <li>PiVPN</li>
@@ -141,8 +141,10 @@ export default function PiPVN() {
           <li>Router Software to</li>
         </ul>
         <br />
-        <h1 id="step-by-step">Step by step</h1>
-        <h2 id="installing-and-updating-raspberry-pi-os">
+        <h1 className="blog-h1" id="step-by-step">
+          Step by step
+        </h1>
+        <h2 className="blog-h2" id="installing-and-updating-raspberry-pi-os">
           Installing and updating Raspberry Pi OS
         </h2>
         <p>
@@ -185,7 +187,7 @@ export default function PiPVN() {
           ![[Pasted image 20240313181245.png]]
         </p>
         <br />
-        <h2 id="installing-pivpn-and-wireguard">
+        <h2 className="blog-h2" id="installing-pivpn-and-wireguard">
           Installing PiVPN and Wireguard
         </h2>
         <p>

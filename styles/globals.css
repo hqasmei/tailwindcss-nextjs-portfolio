@@ -30,3 +30,11 @@
   @apply text-orange-700
   hover:text-purple-700;
 }
+
+.blog-ul {
+  @apply list-disc list-inside;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
