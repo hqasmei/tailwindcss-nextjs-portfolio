@@ -27,16 +27,6 @@ export default function PiPVN() {
         </h2>
         <ul className="blog-ul">
           <li className="blog-quicklink">
-            <Link href="#overview">Overview</Link>
-          </li>
-          <li className="blog-quicklink">
-            <Link href="#quicklinks">QuickLinks</Link>
-          </li>
-          <li className="blog-quicklink">
-            <Link href="#related">Related</Link>
-          </li>
-
-          <li className="blog-quicklink">
             <Link href="#tutorial-im-following">Tutorial I'm Following</Link>
           </li>
           <li className="blog-quicklink">
@@ -56,10 +46,6 @@ export default function PiPVN() {
             </Link>
           </li>
           <li className="blog-quicklink">
-            <Link href="#pivpn">PiVPN</Link>
-          </li>
-
-          <li className="blog-quicklink">
             <Link href="#network-port-forwarding">Network Port Forwarding</Link>
           </li>
           <li className="blog-quicklink">
@@ -72,42 +58,12 @@ export default function PiPVN() {
             -{" "}
           </li>
           <li className="blog-quicklink">
-            <Link href="#-before-setting-static-ip-address-">
-              ~~ Before setting static ip address ~~
-            </Link>{" "}
-            -{" "}
-          </li>
-          <li className="blog-quicklink">
-            <Link href="#-after-setting-static-ip-address-">
-              ~~ After setting static ip address ~~
-            </Link>{" "}
-            -{" "}
-          </li>
-          <li className="blog-quicklink">
-            <Link href="#-what-the-eero-app-looks-like-">
-              ~~ What the eero app looks like ~~
-            </Link>
-          </li>
-
-          <li className="blog-quicklink">
             <Link href="#port-forwarding">Port Forwarding</Link> -{" "}
-            <Link href="#-what-the-eero-app-looks-like--1">
-              ~~ What the eero app looks like ~~
-            </Link>
           </li>
           <li className="blog-quicklink">
             <Link href="#adding-client--profile-to-vpn-server">
               Adding client / Profile to VPN server
             </Link>
-          </li>
-          <li className="blog-quicklink">
-            <Link href="#setting-up-client">Setting Up Client</Link>
-          </li>
-          <li className="blog-quicklink">
-            <Link href="#phone--tablet">Phone / Tablet</Link>
-          </li>
-          <li className="blog-quicklink">
-            <Link href="#laptop--desktop">Laptop / Desktop</Link>
           </li>
           <li className="blog-quicklink">
             <Link href="#performance-and-conclusion">
@@ -151,7 +107,7 @@ export default function PiPVN() {
           I'm installing the lite version via the Raspberry Pi Imager, which is
           without a desktop environment because :
         </p>
-        <ol>
+        <ol className="blog-ol">
           <li>
             it doesn't take as long to download the image file and flash it onto
             the SD card and
@@ -162,6 +118,12 @@ export default function PiPVN() {
           </li>
         </ol>
         <p>![[install_pi_os.png]]</p>
+        <img
+          src="install_pi_os.jpg"
+          className="blog-img"
+          alt="Screenshot of Raspberry Pi Imager writing to disk"
+        />
+        <br />
         <p>
           After that, I realized that I need to connect to wifi. How do you do
           that from a terminal? Oh change the config file? okay, so how do i
