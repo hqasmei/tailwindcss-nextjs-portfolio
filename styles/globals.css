@@ -8,10 +8,12 @@
 
 .blog-h1 {
   @apply text-5xl font-bold text-red-500;
+  margin-bottom: 0.5em;
 }
 
 .blog-h2 {
   @apply text-4xl font-bold text-blue-500;
+  margin-bottom: 0.25em;
 }
 
 .blog-h3 {
@@ -40,7 +42,7 @@
 }
 
 .blog-img {
-  @apply h-auto max-w-full;
+  @apply h-auto max-w-lg mx-auto my-4;
 }
 
 p {

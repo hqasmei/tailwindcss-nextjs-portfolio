@@ -1,6 +1,23 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import "../styles/globals.css";
+
+//import images
+import install_pi_os from "public/wireguard/install_pi_os.png";
+import install_pi_os2 from "public/wireguard/install_pi_os2.png";
+import img6 from "public/wireguard/20240313181245.png";
+import img9 from "public/wireguard/20240313181452.png";
+import img10 from "public/wireguard/20240313181850.png";
+import img11 from "public/wireguard/20240313182127.png";
+import img12 from "public/wireguard/20240313182513.png";
+import img13 from "public/wireguard/20240313182656.png";
+import img14 from "public/wireguard/20240313182859.png";
+import img15 from "public/wireguard/20240313183149.png";
+import img17 from "public/wireguard/20240313201900.png";
+import img18 from "public/wireguard/20240313234057.png";
+import img19 from "public/wireguard/20240314002005.png";
+import img20 from "public/wireguard/20240314005943.png";
 
 export default function PiPVN() {
   return (
@@ -72,12 +89,9 @@ export default function PiPVN() {
           </li>
         </ul>
         <br />
-        <h4 className="blog-h4" id="related">
-          Related
-        </h4>
-        <p>[[Remote Desktop Indy500]]</p>
-        <br />
-        <h1 id="tutorial-im-following">Tutorial I'm Following</h1>
+        <h1 className="blog-h1" id="tutorial-im-following">
+          Tutorial I'm Following
+        </h1>
         <iframe
           width="560"
           height="315"
@@ -88,7 +102,9 @@ export default function PiPVN() {
           //allowfullscreen
         ></iframe>
         <br />
-        <h1 id="materials-and-software">Materials and Software</h1>
+        <h1 className="blog-h1" id="materials-and-software">
+          Materials and Software
+        </h1>
         <ul className="blog-ul">
           <li>Raspberry Pi</li>
           <li>Updated Pi OS</li>
@@ -110,19 +126,21 @@ export default function PiPVN() {
         <ol className="blog-ol">
           <li>
             it doesn't take as long to download the image file and flash it onto
-            the SD card and
+            the SD card compared to the full version
           </li>
           <li>
             More terminal practice. Real programmers don't need a desktop
             environment (strong arm emoji)
           </li>
         </ol>
-        <p>![[install_pi_os.png]]</p>
-        <img
-          src="install_pi_os.jpg"
-          className="blog-img"
-          alt="Screenshot of Raspberry Pi Imager writing to disk"
-        />
+        <div className="blog-img">
+          <Image
+            src={install_pi_os}
+            alt="Screenshot of Raspberry Pi Imager writing to disk"
+            width={1360}
+            height={914}
+          />
+        </div>
         <br />
         <p>
           After that, I realized that I need to connect to wifi. How do you do
@@ -142,11 +160,23 @@ export default function PiPVN() {
             environment
           </li>
         </ol>
-        <p>![[Installing_Pi_os.png]]</p>
+        <Image
+          className="blog-img"
+          src={install_pi_os2}
+          alt="Screenshot of Raspberry Pi Imager writing to disk"
+          width={1360}
+          height={914}
+        />
         <p>
           After that, I used PuTTY to ssh into the raspberry pi. This is useful
           for pasting download commands during the PiVPN and Wireguard tutorials
-          ![[Pasted image 20240313181245.png]]
+          <Image
+            className="blog-img"
+            src={img6}
+            alt=""
+            width={825}
+            height={521}
+          />
         </p>
         <br />
         <h2 className="blog-h2" id="installing-pivpn-and-wireguard">
@@ -161,33 +191,66 @@ export default function PiPVN() {
             curl -L https://install.pivpn.io | bash
           </code>
         </pre>
-        <p>![[Pasted image 20240313181452.png]]</p>
-        <p>
-          After a couple of minutes I get this user interface : ![[Pasted image
-          20240313181850.png]]
-        </p>
+        <Image
+          className="blog-img"
+          src={img9}
+          alt=""
+          width={825}
+          height={521}
+        />
+        <p>After a couple of minutes I get this user interface :</p>
+        <Image
+          className="blog-img"
+          src={img10}
+          alt=""
+          width={858}
+          height={764}
+        />
         <p>Options I Chose during setup:</p>
         <ul>
           <li>
             <p>Block IPv6 Leaks</p>
           </li>
           <li>
-            <p>
-              Use static IP instead of DHCP with these settings : ![[Pasted
-              image 20240313182127.png]] ![[Pasted image 20240313201900.png]]
-            </p>
+            <p>Use static IP instead of DHCP with these settings :</p>
+            <Image
+              className="blog-img"
+              src={img11}
+              alt=""
+              width={825}
+              height={521}
+            />
+            <p>The raspberry pi restarting: </p>
+            <Image
+              className="blog-img"
+              src={img17}
+              alt=""
+              width={864}
+              height={652}
+            />
           </li>
           <li>
             <p>
               Using Wireguard instad of OpenVPN because it's newer and much more
-              compact ![[Pasted image 20240313182513.png]]
+              compact than OpenVPN
             </p>
+            <Image
+              className="blog-img"
+              src={img12}
+              alt=""
+              width={825}
+              height={521}
+            />
           </li>
           <li>
-            <p>
-              Assign the standard wireguard port : 51820 ![[Pasted image
-              20240313182656.png]]
-            </p>
+            <p>Assign the standard wireguard port : 51820</p>
+            <Image
+              className="blog-img"
+              src={img13}
+              alt=""
+              width={825}
+              height={521}
+            />
           </li>
           <li>
             <p>
@@ -196,8 +259,21 @@ export default function PiPVN() {
             </p>
           </li>
         </ul>
-        <p>![[Pasted image 20240313182859.png]]</p>
-        <p>Then I reboot the system : ![[Pasted image 20240313183149.png]]</p>
+        <Image
+          className="blog-img"
+          src={img14}
+          alt=""
+          width={825}
+          height={521}
+        />
+        <p>Then I reboot the system: </p>
+        <Image
+          className="blog-img"
+          src={img15}
+          alt=""
+          width={825}
+          height={521}
+        />
         <br />
         <h2 className="blog-h2" id="network-port-forwarding">
           Network Port Forwarding
@@ -233,11 +309,11 @@ export default function PiPVN() {
         <h5 className="blog-h5" id="-before-setting-static-ip-address-">
           ~~ Before setting static ip address ~~
         </h5>
-        <p>![[Pasted image 20240313234057.png]]</p>
+        <Image src={img18} alt="" width={832} height={910} />
         <h5 className="blog-h5" id="-after-setting-static-ip-address-">
           ~~ After setting static ip address ~~
         </h5>
-        <p>![[Pasted image 20240314002005.png]]</p>
+        <Image src={img19} alt="" width={828} height={857} />
         <h5 className="blog-h5" id="-what-the-eero-app-looks-like-">
           ~~ What the eero app looks like ~~
         </h5>
@@ -293,7 +369,7 @@ export default function PiPVN() {
           from the config file I copied onto the usb thumb drive. After
           connecting to the VPN my laptop looks like this :
         </p>
-        <p>![[Pasted image 20240314005943.png]]</p>
+        <Image src={img20} alt="" width={825} height={647} />
         <br />
         <h1 className="blog-h1" id="performance-and-conclusion">
           Performance and Conclusion
@@ -320,8 +396,8 @@ export default function PiPVN() {
         <p>
           Performance was lackluster at best. With both the Raspberry Pi and my
           laptop on wifi, I had a very laggy time trying to playback a formula
-          one race on YouTube. You can see the speed test results here :
-          [[Remote Desktop Indy500#Benchmarks]].
+          one race on YouTube. You can see the speed test results here : [Coming
+          soon]
         </p>
         <p>
           It is clear that I am going to have to increase performance in order
