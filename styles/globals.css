@@ -35,6 +35,14 @@
   @apply list-disc list-inside;
 }
 
+.blog-ol {
+  @apply list-decimal list-inside;
+}
+
+.blog-img {
+  @apply h-auto max-w-full;
+}
+
 p {
   margin-bottom: 1.5em;
 }
