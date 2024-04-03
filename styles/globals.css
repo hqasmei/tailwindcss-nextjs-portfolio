@@ -25,7 +25,7 @@
 }
 
 .blog-h5 {
-  @apply text-xl font-bold text-teal-500;
+  @apply text-xl font-bold text-teal-500 text-center;
 }
 
 .blog-quicklink {

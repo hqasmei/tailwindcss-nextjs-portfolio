@@ -309,11 +309,23 @@ export default function PiPVN() {
         <h5 className="blog-h5" id="-before-setting-static-ip-address-">
           ~~ Before setting static ip address ~~
         </h5>
-        <Image src={img18} alt="" width={832} height={910} />
+        <Image
+          className="blog-img"
+          src={img18}
+          alt=""
+          width={832}
+          height={910}
+        />
         <h5 className="blog-h5" id="-after-setting-static-ip-address-">
           ~~ After setting static ip address ~~
         </h5>
-        <Image src={img19} alt="" width={828} height={857} />
+        <Image
+          className="blog-img"
+          src={img19}
+          alt=""
+          width={828}
+          height={857}
+        />
         <h5 className="blog-h5" id="-what-the-eero-app-looks-like-">
           ~~ What the eero app looks like ~~
         </h5>
@@ -369,7 +381,13 @@ export default function PiPVN() {
           from the config file I copied onto the usb thumb drive. After
           connecting to the VPN my laptop looks like this :
         </p>
-        <Image src={img20} alt="" width={825} height={647} />
+        <Image
+          className="blog-img"
+          src={img20}
+          alt=""
+          width={825}
+          height={647}
+        />
         <br />
         <h1 className="blog-h1" id="performance-and-conclusion">
           Performance and Conclusion
