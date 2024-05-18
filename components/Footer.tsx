@@ -22,7 +22,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://twitter.com/hqasmei"
+            href="https://twitter.com/jaakehlms"
             rel="noreferrer"
             target="_blank"
           >
@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/hosnaqasmei/"
+            href="https://www.linkedin.com/in/jakerichmondholmes/"
             rel="noreferrer"
             target="_blank"
           >
