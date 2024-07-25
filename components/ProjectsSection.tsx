@@ -5,30 +5,44 @@ import SlideUp from "./SlideUp"
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
-  {
-    name: "Thankful Thoughts",
-    description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
-  },
-  {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
-  },
-  {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
-  },
-]
+	{
+		name: "Social Media",
+		description:
+			"a social media app, the forntend is completed and i am working on backend these days.",
+		image: "/SocialMedia.png",
+		github: "https://github.com/asmr-pro",
+		link: "",
+	},
+	{
+		name: "CRUD App",
+		description:
+			"a full-stack crud app using next js and mongodb",
+		image: "/curd-app.png",
+		github: "https://github.com/asmr-pro",
+		link: "",
+	},
+	{
+		name: "Age Calcultor",
+		description: "a simple age calculator using html, css and js.",
+		image: "/age.png",
+		github: "https://github.com/asmr-pro",
+		link: "",
+	},
+	{
+		name: "Weather App",
+		description: "a simple weather calculator using html, css and js.",
+		image: "/weather.png",
+		github: "https://github.com/asmr-pro",
+		link: "",
+	},
+	{
+		name: "Rock Paper Scissors",
+		description: "a funny game called Rock Paper Scissors using Javascript.",
+		image: "/rock.png",
+		github: "https://github.com/asmr-pro",
+		link: "",
+	},
+];
 
 const ProjectsSection = () => {
   return (
