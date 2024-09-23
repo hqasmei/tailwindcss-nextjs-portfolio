@@ -8,6 +8,9 @@ import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
+{
+  /*For non-external navbar items */
+}
 interface NavItem {
   label: string;
   page: string;
