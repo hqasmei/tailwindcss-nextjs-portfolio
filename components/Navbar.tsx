@@ -90,7 +90,7 @@ export default function Navbar() {
                 LinkedIn
               </Link>
               <Link
-                href="https://github.com/AlecMalenfant001/Personal-Website"
+                href="https://github.com/AlecMalenfant001"
                 id="GitHub"
                 className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
                 onClick={() => setNavbar(!navbar)}
