@@ -60,6 +60,7 @@ export default function Navbar() {
             }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              {/* Navbar items */}
               {NAV_ITEMS.map((item, idx) => {
                 return (
                   <SkrollLink
@@ -79,14 +80,22 @@ export default function Navbar() {
                   </SkrollLink>
                 );
               })}
-
+              {/* External links */}
               <Link
-                href="/PiVPN_WireGuard"
-                id="PiVPN_WireGuard"
+                href="https://www.linkedin.com/in/alec-malenfant/"
+                id="LinkedIn"
                 className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
                 onClick={() => setNavbar(!navbar)}
               >
-                WireGuard
+                LinkedIn
+              </Link>
+              <Link
+                href="https://github.com/AlecMalenfant001/Personal-Website"
+                id="GitHub"
+                className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
+                onClick={() => setNavbar(!navbar)}
+              >
+                GitHub
               </Link>
               {currentTheme === "dark" ? (
                 <button
