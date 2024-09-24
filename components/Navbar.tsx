@@ -25,6 +25,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "About",
     page: "about",
   },
+  {
+    label: "Contact",
+    page: "contact",
+  },
 ];
 
 export default function Navbar() {
