@@ -76,6 +76,7 @@ const AboutSection = () => {
               </span>{" "}
               , super outgoing, and always up for a new challenge
             </p>
+            <br />
             <section id="contact">
               <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
                 Contact me!
