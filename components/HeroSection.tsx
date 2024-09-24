@@ -1,7 +1,7 @@
 "use client"; // this is a client component
 import React from "react";
 import Image from "next/image";
-import { Link } from "react-scroll/modules";
+import { Button, Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
 
 const HeroSection = () => {
@@ -29,17 +29,12 @@ const HeroSection = () => {
             at Purdue University Northwest in Hammond, Indiana. Pushing myself
             to learn and grow every day!
           </p>
-          <Link
-            to="about"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-purple-600 rounded shadow hover:bg-purple-700"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
+          <button
+            onClick={() => downloadResume()}
+            className="text-neutral-100 font-semibold px-6 py-3 bg-purple-600 rounded shadow hover:bg-purple-700 mt-4"
           >
-            About Me
-          </Link>
+            Download Resume
+          </button>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
@@ -57,5 +52,15 @@ const HeroSection = () => {
     </section>
   );
 };
+
+function downloadResume() {
+  const a = document.createElement("a");
+  a.href =
+    "https://drive.google.com/uc?export=download&id=1_0lfFvJnZ9tWV3JZ8mDyeYym1Iq1lFOp";
+  a.download = "Alec-Malenfant-Resume.docx"; // File name
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
 
 export default HeroSection;
