@@ -51,14 +51,13 @@ const AboutSection = () => {
               to turn ideas into reality. Some projects that I have worked on
               include :
             </p>
-            <ul>
+            <ul className="list-disc pl-5">
               <li>Ai image generation web app</li>
               <li>Chromebook repository web app</li>
               <li>Campus navigation web app</li>
               <li>Home server running multiple Docker containers</li>
               <li>
-                Rubik&#39s Cube scramble generator and solve timer Java
-                application
+                Rubik's Cube scramble generator and solve timer Java application
               </li>
             </ul>
             <br />
@@ -66,7 +65,7 @@ const AboutSection = () => {
               Outside of tech, I have many hobbies. I always say that I am
               willing to try anything twice. I will never hesitate to give it my
               all and get back up when I fall. I love singing, dancing, solving
-              puzzles like Rubik&#39;s cubes, sim racing, skateboarding,
+              puzzles like Rubik's cubes, sim racing, skateboarding,
               longboarding, and more.
             </p>
             <br />
