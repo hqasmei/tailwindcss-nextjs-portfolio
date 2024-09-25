@@ -17,7 +17,7 @@ const skills = [
   { skill: "Git" },
   { skill: "GitHub" },
   { skill: "Amazon Web Service" },
-  { skill: "MySQL" },
+  { skill: "SQL" },
 ];
 
 const AboutSection = () => {
@@ -57,7 +57,7 @@ const AboutSection = () => {
               <li>Campus navigation web app</li>
               <li>Home server running multiple Docker containers</li>
               <li>
-                Rubik&#39s Cube scramble generator and solve timer Java
+                Rubik&#39;s Cube scramble generator and solve timer Java
                 application
               </li>
             </ul>
@@ -66,7 +66,7 @@ const AboutSection = () => {
               Outside of tech, I have many hobbies. I always say that I am
               willing to try anything twice. I will never hesitate to give it my
               all and get back up when I fall. I love singing, dancing, solving
-              puzzles like Rubik&#39s cubes, sim racing, skateboarding,
+              puzzles like Rubik&#39;s cubes, sim racing, skateboarding,
               longboarding, and more.
             </p>
             <br />
