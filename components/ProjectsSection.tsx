@@ -5,6 +5,16 @@ import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
+  
+  {
+    name: "Cinemaster",
+    description:
+      "Introducing Cinemaster – your ultimate movie night companion! Whether you're planning a cozy evening at home or looking to discover your next cinematic adventure, Cinemaster makes it easy to find the perfect movie.",
+    image: "/images/cinemaster.png",
+    icon: "/icons/cinemaster.png",
+    github: "https://github.com/JamShou/cinemaster",
+    link: "https://cinemaster.vercel.app/",
+  },
   {
     name: "MuseAI",
     description:
