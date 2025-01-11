@@ -16,8 +16,15 @@ const skills = [
   { skill: "Bootstrap CSS" },
   { skill: "Git" },
   { skill: "GitHub" },
+  { skill: "Docker" },
   { skill: "Amazon Web Service" },
+  { skill: "Azure" },
   { skill: "SQL" },
+  { skill: "RESTful APIs" },
+  { skill: "Data Structures" },
+  { skill: "Algorithms" },
+  { skill: "Machine Learning" },
+  { skill: "Object-Oriented Programming" },
 ];
 
 const AboutSection = () => {
@@ -40,20 +47,21 @@ const AboutSection = () => {
               <span className="font-bold">{"enthusiastic"}</span>,
               <span className="font-bold">{" ambitious"} </span>, and
               <span className="font-bold">{" driven"}</span> computer science
-              student in northwest Indiana located near Chicago.
+              graduate in northwest Indiana located near Chicago.
             </p>
             <br />
             <p>
               Attending both Ivy Tech and Purdue University Northwest, I have
-              accumulated various skills that help me tackle a wide range of
-              projects. From writing Python scripts to managing a local server
-              to developing and deploying multiple websites, I have the skills
-              to turn ideas into reality. Some projects that I have worked on
+              accumulated a wide range of skills to help me tackle various
+              projects. My senior project recently won 1st prize in Purdue
+              University Northwest's senior design contest. From managing a
+              local server to deploying multiple websites, I have the skills to
+              turn ideas into reality. Some projects that I have worked on
               include :
             </p>
             <ul className="list-disc pl-5">
-              <li>Ai image generation web app</li>
-              <li>Chromebook repository web app</li>
+              <li>AI image generation web app - award winner</li>
+              <li>Chromebook database web app</li>
               <li>Campus navigation web app</li>
               <li>Home server running multiple Docker containers</li>
               <li>
@@ -63,11 +71,14 @@ const AboutSection = () => {
             </ul>
             <br />
             <p>
-              Outside of tech, I have many hobbies. I always say that I am
-              willing to try anything twice. I will never hesitate to give it my
-              all and get back up when I fall. I love singing, dancing, solving
-              puzzles like Rubik&#39;s cubes, sim racing, skateboarding,
-              longboarding, and more.
+              I spend a large amount of my free time on tech. Tinkering is one
+              of my favorite hobbies! Recently, I have been enjoying deploying
+              docker containers on my local server that are genuinely useful. I
+              have an instance of Jellyfin that streams my local media to any
+              device in my house. I also replaced costly third party gaming
+              services with my own. By switching to self hosting my minecraft
+              server, I have saved hundreds of dollars a year, and have created
+              an easy and private space for my brother and I to game together.
             </p>
             <br />
             <p>

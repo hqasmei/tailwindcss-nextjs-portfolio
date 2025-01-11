@@ -24,10 +24,10 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-purple-600">
-              senior computer science student{" "}
+              recent computer science graduate{" "}
             </span>
-            at Purdue University Northwest in Hammond, Indiana. Pushing myself
-            to learn and grow every day!
+            with a passion for all things tech. Pushing myself to learn and grow
+            every day!
           </p>
           <button
             onClick={() => downloadResume()}
@@ -56,7 +56,7 @@ const HeroSection = () => {
 function downloadResume() {
   const a = document.createElement("a");
   a.href =
-    "https://drive.google.com/uc?export=download&id=1_0lfFvJnZ9tWV3JZ8mDyeYym1Iq1lFOp";
+    "https://drive.google.com/uc?export=download&id=1LzhxyA17T9uxEFoX73_TikxvTXKz1fTu";
   a.download = "Alec-Malenfant-Resume.docx"; // File name
   document.body.appendChild(a);
   a.click();
